@@ -32,7 +32,8 @@ from sklearn.preprocessing import StandardScaler
 
 # Load the dataset
 data = pd.read_csv("CarPrice_Assignment (1).csv")
-
+print(data.head())
+print(data.info())
 # Data preprocessing
 # Dropping unnecessary columns and handling categorical variables
 data = data.drop(['CarName', 'car_ID'], axis=1)
@@ -84,6 +85,8 @@ plt.show()
 ```
 
 ## Output:
+![alt text](image-1.png)
+![alt text](image-2.png)
 ![alt text](image.png)
 
 
