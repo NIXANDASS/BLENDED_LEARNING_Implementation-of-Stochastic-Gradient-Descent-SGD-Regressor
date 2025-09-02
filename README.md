@@ -9,10 +9,45 @@ To write a program to implement Stochastic Gradient Descent (SGD) Regressor for 
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+
+1. **Import Necessary Libraries**: 
+   - Import required libraries such as `pandas`, `numpy`, `matplotlib`, `sklearn` for the implementation.
+
+2. **Load the Dataset**: 
+   - Load the dataset (e.g., `CarPrice_Assignment.csv`) using `pandas`.
+
+3. **Data Preprocessing**: 
+   - Drop unnecessary columns (e.g., 'CarName', 'car_ID').
+   - Handle categorical variables using `pd.get_dummies()`.
+
+4. **Split the Data**: 
+   - Split the dataset into features (X) and target variable (Y).
+   - Split the data into training and testing sets using `train_test_split()`.
+
+5. **Standardize the Data**: 
+   - Standardize the feature data (X) and target variable (Y) using `StandardScaler()` to ensure they have mean=0 and variance=1.
+
+6. **Create the SGD Regressor Model**: 
+   - Initialize the SGD Regressor model with `max_iter=1000` and `tol=1e-3`.
+
+7. **Train the Model**: 
+   - Fit the model to the training data using the `fit()` method.
+
+8. **Make Predictions**: 
+   - Use the trained model to predict the target values for the test set.
+
+9. **Evaluate the Model**: 
+   - Calculate performance metrics like Mean Squared Error (MSE) and R-squared score using `mean_squared_error()` and `r2_score()`.
+
+10. **Display Model Coefficients**: 
+    - Display the model's coefficients and intercept.
+
+11. **Visualize the Results**: 
+    - Create a scatter plot comparing actual vs predicted prices.
+
+12. **End**: 
+    - The program finishes by displaying the evaluation metrics, model coefficients, and a visual representation of the predictions.
+
 
 ## Program:
 ```
